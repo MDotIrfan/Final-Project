@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hall Of DC's Characters Origin</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <a href="index.html" class="home">Home</a>
+        <a href="character.html">Characters</a>
+        <a href="about.html">About Us</a>
+        <a href="#contact" id="link">Any Question?</a>
+    </div>
+    <div class="hero-image">
+        <div class="hero-text">
+            <p>Welcome To The</p>
+            <h1 style="font-size:50px">Hall Of DC's Characters Origin</h1>
+            <button onclick="topFunction()" id="myBtn">Get Started</button>
+        </div>
+    </div>
+    <h2><span>Get To Know</span>
+<br> The Character</h2>
+    <div class="column">
+        <a href="#superman">
+            <img src="img/superman.jpg" alt="Superman" style="width:100%">
+            <h3 style="text-decoration: none;">Superman</h3>
+        </a>
+    </div>
+    <div class="column">
+        <a href="#batman">
+            <img src="img/batman.jpg" alt="Batman" style="width:100%">
+            <h3>Batman</h3>
+        </a>
+    </div>
+    <div class="column">
+        <a href="#ww">
+            <img src="img/ww.jpg" alt="Wonder Woman" style="width:100%">
+            <h3>Wonder Woman</h3>
+        </a>
+    </div>
+    <div class="column">
+        <a href="#gl">
+            <img src="img/gl.jpg" alt="Green Lantern" style="width:100%">
+            <h3>Green Lantern</h3>
+        </a>
+    </div>
+    <div class="column">
+        <a href="#flash">
+            <img src="img/flash.jpg" alt="Flash" style="width:100%">
+            <h3>Flash</h3>
+        </a>
+    </div>
+    <div class="column">
+        <a href="#cyborg">
+            <img src="img/cyborg.jpg" alt="Cyborg" style="width:100%">
+            <h3>Cyborg</h3>
+        </a>
+    </div>
+    <a href="character.html">
+        <button class="btn">More Character</button>
+    </a>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="alert">
+                Please fill this form to ask some question to us. the answers to your question will be send to your email.
+            </div>
+            <form action="https://formspree.io/muhammadirfan.9f@gmail.com" method="POST">
+                <p>Name : </p>
+                <input type="text" name="name" class="modal-name" placeholder="Enter Your Name">
+                <p>Email : </p>
+                <input type="text" name="_replyto" class="modal-email" placeholder="Enter Your Email">
+                <p>Question : </p>
+                <textarea name="question" class="modal-question"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </div>
+    <p style="text-align: center; margin-top: 20px; font-size: 10px;">Copyright © 2019 Muhammad Irfan</p>
+    <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.top = "0px";
+                document.getElementById("navbar").style.height = "83px";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+                document.getElementById("navbar").style.height = "0px";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 560; // For Safari
+            document.documentElement.scrollTop = 560; // For Chrome, Firefox, IE and Opera
+        }
+
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var link = document.getElementById("link");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        link.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
